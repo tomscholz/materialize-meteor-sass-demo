@@ -1,0 +1,40 @@
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meteor demo - Materialize</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+  {{> navbar}} {{> content}}
+</body>
+
+<template name="navbar">
+  <nav role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Meteor</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="#">Navbar Link</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+</template>
+
+<template name="content">
+  <div class="container">
+    <h1 class="header center text-lighten-2">Materialize meteor demo</h1>
+    <div class="row center">
+        <h5 class="header col s12 light">You've pressed the button {{counter}} times.</h5>
+    </div>
+    <div class="row center">
+        <button class="btn-large waves-effect waves-light lighten-1">Click Me</button>
+    </div>
+  </div>
+</template>
